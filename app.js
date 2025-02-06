@@ -1,14 +1,10 @@
-// function printDrink() {
-//     var drink = 'tea';
-//     console.log("My favourite drink is" + " " + drink);
-// };
+// var lineExample = 'First line\n Second line\n Third line';
+// console.log(lineExample);
 
-// printDrink();
+// Template literals allow for multi-line concatenation.
 
-// Using template literals:
-function printDrink() {
-    let drink = 'coffee';
-    console.log(`My favourite drink is ${drink}`);
-};
+let lineExample = `First line
+Second line
+Third line`;
 
-printDrink();
+console.log(lineExample);
