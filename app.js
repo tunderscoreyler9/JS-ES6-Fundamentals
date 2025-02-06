@@ -1,13 +1,22 @@
-function outerParent() {
-    let one = 'I was vreated with let';
-    var two = 'I was created with var';
+// const drinks = ['cola', 'tea', 'water', 'soda'];
 
-    function innerChild() {
-        console.log(one, "one");
-        console.log(two, "two");
-    };
+// classic for loop
+// for (let i = 0; i < drinks.length; i++) {
+//     console.log(drinks[i]);
+// };
 
-    innerChild();
+// for...of
+// for (const drink of drinks) {
+//     console.log(drink);
+// }
+
+const drinksObject = {
+    soda: ['pepsi', 'coca-cola', 'cola'],
+    tea: ['earl grey', 'english breakfast'],
+    other: 'water'
 };
 
-outerParent();
+for (const drink in drinksObject) {
+    // console.log({ [drink]: [drinksObject[drink]]}); // Computed property syntax
+    console.log(`${drink}: ${drinksObject[drink]}`); //Template literals
+}
