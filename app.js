@@ -1,10 +1,13 @@
-// var lineExample = 'First line\n Second line\n Third line';
-// console.log(lineExample);
+// const greet = function(name) { return `Hello, ${name}!`};
 
-// Template literals allow for multi-line concatenation.
+// console.log(greet("Tyler"));
 
-let lineExample = `First line
-Second line
-Third line`;
+const greet = (name) => {
+    return `Hello, ${name}`;
+};
 
-console.log(lineExample);
+console.log(greet("Mr. Adams"));
+
+// Single-line arrow function:
+const generateName = (name) => name;
+console.log(generateName("Andrew!"));
